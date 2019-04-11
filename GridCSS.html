@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: left; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'left left main main right right'
+    'footer footer footer footer footer footer';
+  grid-gap: 20px;
+  background-image: url("bg1.jpg");
+  padding: 20px;
+  height: 600px;
+  grid-template-rows: 20% 53% 20%
+}
+
+    
+.grid-container > div {
+  background-color: aliceblue;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  font-family: serif;
+  color: darkslateblue;
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1">Photography</div>   
+<div class="item2">
+    <img src="sports.jpg" alt="sports" width="400" height="270">
+</div>
+<div class="item3">
+    <img src="beach.jpg" alt="beach" width="400" height="270">
+</div>
+<div class="item4">
+    <img src="animals.jpg" alt="animal" width="400" height="270">
+</div>
+  <div class="item5">Enjoy!</div>
+</div>
+
+</body>
+</html>
